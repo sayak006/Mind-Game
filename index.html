@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Power Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rulebox_style.css">
+    <link rel="stylesheet" href="resultbox_style.css">
+</head>
+<body>
+    <!-- <audio controls src="/music/gamemusic-6082.mp3" autoplay loop hidden id="audio"></audio> -->
+    <div class="inactive-rule">
+        <div class="instructions" >
+            <div class="header-rule">
+                <h2>Rules</h2>
+            </div>
+            <div class="list">
+                <ul class="rule">
+                    <li>Click the play button and you can see some photos.</li>
+                    <li>You have to remember the sequence of those photos.</li>
+                    <li>You can click the play button just once, then it will be hidden.</li>
+                    <li>You have to write the proper sequence in text field.</li>
+                    <li>Then click submit button.</li>
+                    <li>Your score will be calculated based on how many items you write in proper order</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <div class="menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            <h2>Mind Power</h2>
+        </div>
+        <div class="image">
+            <img id="playImg" src="image/play.jpg">
+        </div>
+        <div class="button">
+            <button id="playBtn">Play</button>
+            <p id="names">START</p>
+        </div>
+        <div class="form">
+            <input type="text" id="userSequence" placeholder="Write the proper sequence" disabled   ></textarea>
+            <!-- <div class="submit-restart"> -->
+                <button id="submitBtn">Submit</button>
+                <!-- <button id="restartBtn">Restart</button> -->
+            <!-- </div> -->
+        </div>
+        <div class="score">
+            <p id="scoreText">Your Score:</p>
+            <button id="detailBtn">Detail</button>
+            <!-- <button id="restartBtn">Restart</button> -->
+        </div>
+    </div>
+    <div class="inactive-result">
+        <div class="result">
+            <div class="header-result">
+                <h2>Result</h2>
+            </div>
+            <div class="table-div">
+                <table>
+                    <tr>
+                        <th>Computer Choice</th>
+                        <th>User Choice</th>
+                        <th>Right/Wrong</th>
+                    </tr>
+                    <!-- <tr>
+                        <td>Cat</td>
+                        <td>Dog</td>
+                        <td>&#10060;</td>
+                    </tr>
+                    <tr>
+                        <td>Lion</td>
+                        <td>Lion</td>
+                        <td>&#9989;</td>
+                    </tr> -->
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

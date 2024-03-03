@@ -1,0 +1,29 @@
+.header-rule{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 16px;
+    color: rgb(166, 84, 243);
+    visibility: hidden;
+    /* display: flex; */
+}
+.active .header-rule{
+    visibility: visible;
+}
+.list{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    margin-left: 35px;
+}
+ul{
+    list-style: numeric;
+}
+li{
+    font-size: 20px;
+    padding: 10px;
+    font-family:cursive;
+    color: chartreuse;
+    visibility: hidden;
+}
+.active li{
+    visibility: visible;
+}

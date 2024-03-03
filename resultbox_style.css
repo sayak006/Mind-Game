@@ -1,0 +1,36 @@
+.header-result{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 16px;
+    color: rgb(166, 84, 243);
+    visibility: hidden;
+    /* display: flex; */
+}
+.active .header-result{
+    visibility: visible;
+}
+.table-div{
+    /* border: 1px solid black; */
+    height: 600px;
+    margin-top: 20px;
+    visibility: hidden;
+}
+.active .table-div{
+    visibility: visible;
+}
+table, th, td{
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 5px;
+    width: 500px;
+}
+th,td{
+    font-size: 20px;
+}
+th{
+    border: 1px solid black;
+    background-color: aqua;
+}
+td{
+    color: white;
+}
