@@ -1,31 +1,31 @@
 .header-result{
     text-align: center;
-    font-size: 2rem;
-    margin-top: 16px;
+    font-size: 1.6rem;
+    margin-top: 9px;
     color: rgb(166, 84, 243);
     visibility: hidden;
     /* display: flex; */
 }
-.active .header-result{
+.active-result .header-result{
     visibility: visible;
 }
 .table-div{
     /* border: 1px solid black; */
-    height: 600px;
+    height: 400px;
     margin-top: 20px;
     visibility: hidden;
 }
-.active .table-div{
+.active-result .table-div{
     visibility: visible;
 }
 table, th, td{
     /* border: 1px solid black; */
     text-align: center;
     padding: 5px;
-    width: 500px;
+    width: 400px;
 }
 th,td{
-    font-size: 20px;
+    font-size: 15px;
 }
 th{
     border: 1px solid black;
