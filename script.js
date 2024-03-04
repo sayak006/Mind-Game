@@ -17,19 +17,19 @@ restartBtn.textContent='Restart'
 // const compPhotoId=['Cat','Peacock','Lion','Dog','Snake','Horse','Eagle','Elephant','Frog']
 const seq=[
     ['cat.jpg','peacock.jpg','lion.jpg','dog.jpg','snake.jpg','horse.jpg','eagle.jpg','elephant.jpg','frog.jpg'],
-    ['bmw.png','jaguar.png','supra.png','audi.png','ferrari.png','lamborghini.png','porsche.png','toyota.png'],
+    // ['bmw.png','jaguar.png','supra.png','audi.png','ferrari.png','lamborghini.png','porsche.png','toyota.png'],
     ['horse.jpg','dog.jpg','elephant.jpg','lion.jpg','frog.jpg','cat.jpg','snake.jpg','eagle.jpg','peacock.jpg'],
-    ['bmw.png','audi.png','lamborghini.png','toyota.png','ferrari.png','porsche.png','jaguar.png','supra.png'],
+    // ['bmw.png','audi.png','lamborghini.png','toyota.png','ferrari.png','porsche.png','jaguar.png','supra.png'],
     ['dog.jpg','lion.jpg','cat.jpg','eagle.jpg','horse.jpg','elephant.jpg','frog.jpg','peacock.jpg','snake.jpg'],
-    ['audi.png','bmw.png','ferrari.png','jaguar.png','lamborghini.png','porsche.png','supra.png','toyota.png'],
+    // ['audi.png','bmw.png','ferrari.png','jaguar.png','lamborghini.png','porsche.png','supra.png','toyota.png'],
 ]
 const seqID=[
     ['Cat','Peacock','Lion','Dog','Snake','Horse','Eagle','Elephant','Frog'],
-    ['Bmw','Jaguar','Supra','Audi','Ferrari','Lamborghini','Porsche','Toyota'],
+    // ['Bmw','Jaguar','Supra','Audi','Ferrari','Lamborghini','Porsche','Toyota'],
     ['Horse','Dog','Elephant','Lion','Frog','Cat','Snake','Eagle','Peacock'],
-    ['Bmw','Audi','Lamborghini','Toyota','Ferrari','Porsche','Jaguar','Supra'],
+    // ['Bmw','Audi','Lamborghini','Toyota','Ferrari','Porsche','Jaguar','Supra'],
     ['Dog','Lion','Cat','Eagle','Horse','Elephant','Frog','Peacock','Snake'],
-    ['Audi','Bmw','Ferrari','Jaguar','Lamborghini','Porsche','Supra','Toyota'],
+    // ['Audi','Bmw','Ferrari','Jaguar','Lamborghini','Porsche','Supra','Toyota'],
 ]
 let random=Math.floor(Math.random()*seq.length)
 console.log(random)
@@ -96,7 +96,7 @@ const scoreEvaluation=(score)=>{
     else if(evaluation>=5 && evaluation<=7){
         scoreText.innerHTML=`Your score: ${score}/${total} &#128531;`
     }
-    else if(evaluation===seq[random].length-1){
+    else if(evaluation===seq[random].length || evaluation===seq[random].length-1){
         scoreText.innerHTML=`Your score: ${score}/${total} &#128557;`
     }
 }
@@ -127,7 +127,7 @@ const compare=(userSequence)=>{
 playBtn.addEventListener('click',async()=>{
     await identity()
     playBtn.remove()
-    // document.querySelector('#audio').play()
+    document.querySelector('#audio').play()
     names.style.visibility="visible"
     stopped=setInterval(changePhoto,700)
 })
@@ -139,13 +139,13 @@ submitBtn.addEventListener('click',()=>{
     }
 })
 restartBtn.addEventListener('click',()=>{
-    // document.querySelector('#audio').pause()
+    document.querySelector('#audio').pause()
     location.reload()
 })
 menu.addEventListener('click',()=>{
     menu.classList.toggle("change");
-    document.querySelector('.inactive-rule').classList.toggle("active")
+    document.querySelector('body').classList.toggle("active-rule")
 })
 detailBtn.addEventListener('click',()=>{
-    document.querySelector('.inactive-result').classList.toggle("active")
+    document.querySelector('body').classList.toggle("active-result")
 })
