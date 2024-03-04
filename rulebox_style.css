@@ -1,12 +1,12 @@
-.header-rule{
+.header-rule h2{
     text-align: center;
-    font-size: 2rem;
-    margin-top: 16px;
+    font-size: 2.4rem;
+    margin-top: 9px;
     color: rgb(166, 84, 243);
     visibility: hidden;
     /* display: flex; */
 }
-.active .header-rule{
+.active-rule .header-rule h2{
     visibility: visible;
 }
 .list{
@@ -18,12 +18,12 @@ ul{
     list-style: numeric;
 }
 li{
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px;
     font-family:cursive;
     color: chartreuse;
     visibility: hidden;
 }
-.active li{
+.active-rule li{
     visibility: visible;
 }
