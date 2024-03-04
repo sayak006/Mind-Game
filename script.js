@@ -129,7 +129,7 @@ playBtn.addEventListener('click',async()=>{
     playBtn.remove()
     document.querySelector('#audio').play()
     names.style.visibility="visible"
-    stopped=setInterval(changePhoto,700)
+    stopped=setInterval(changePhoto,1000)
 })
 submitBtn.addEventListener('click',()=>{
     if(userSequence.value.length===0) alert("Please write...")
